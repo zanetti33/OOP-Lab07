@@ -1,5 +1,5 @@
 #SpotBugs User Preferences
-#Wed Oct 31 14:24:20 CET 2018
+#Wed Oct 31 14:24:35 CET 2018
 detectorAppendingToAnObjectOutputStream=AppendingToAnObjectOutputStream|true
 detectorAtomicityProblem=AtomicityProblem|true
 detectorBadAppletConstructor=BadAppletConstructor|false

@@ -4,14 +4,15 @@ package it.unibo.oop.lab.nesting2;
  * 
  * Represent the dual of an Iterator: accept elements in the same sequence as
  * configured on its Acceptable.
- * 
+ *
  * @param <T>
  */
 public interface Acceptor<T> {
 
     /**
      * Accept a new element. In case the element is not part of the set
-     * sequence, throws a {@link Acceptor.ElementNotAcceptedException}
+     * sequence, returns a
+     * {@link it.unibo.oop.lab.nesting2.Acceptor.ElementNotAcceptedException}
      * .
      * 
      * @param newElement
@@ -23,21 +24,26 @@ public interface Acceptor<T> {
 
     /**
      * Terminate to input new elements. If more elements have still to be
-     * inserted, throws an {@link Acceptor.EndNotAcceptedException}.
+     * inserted, throws an
+     * {@link it.unibo.oop.lab.nesting2.Acceptor.EndNotAcceptedException}.
      * 
      * @throws EndNotAcceptedException
      *             if more elements still need to be accepted
      */
     void end() throws EndNotAcceptedException;
 
+    /*
+     * Note: this class is public and static by default, so the modifiers are
+     * not redundantly written here.
+     */
     /**
      * Represents an exception occurring when trying to make the acceptor accept
      * a wrong (out-of-sequence) element.
-     * 
+     *
      */
-    @SuppressWarnings("serial")
-    class ElementNotAcceptedException extends RuntimeException {
+    class ElementNotAcceptedException extends Exception {
 
+        private static final long serialVersionUID = -3064859728330027691L;
         private final Object element;
 
         /**
@@ -57,16 +63,13 @@ public interface Acceptor<T> {
         public Object getElement() {
             return element;
         }
-
     }
 
     /**
      * Occurring when trying to terminate accepting new elements, but still
      * other elements have to accepted.
-     * 
      */
-    @SuppressWarnings("serial")
-    class EndNotAcceptedException extends RuntimeException {
+    class EndNotAcceptedException extends Exception {
+        private static final long serialVersionUID = -9112482421243100402L;
     }
-
 }

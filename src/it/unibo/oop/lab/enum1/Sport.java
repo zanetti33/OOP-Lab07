@@ -4,14 +4,36 @@
 package it.unibo.oop.lab.enum1;
 
 /**
- * Represents an enumeration for declaring sports;
- * 
- * 1) Complete the definition of the enumeration.
+ * Represents an enumeration for declaring sports.
  * 
  */
 public enum Sport {
-    /*
-     * declare the following sports: - basket - soccer - tennis - bike - F1 -
-     * motogp - volley
+    /**
+     * Basket.
      */
+    BASKET,
+    /**
+     * Soccer / football.
+     */
+    SOCCER,
+    /**
+     * Tennis.
+     */
+    TENNIS,
+    /**
+     * Biking.
+     */
+    BIKE,
+    /**
+     * Formula One.
+     */
+    F1,
+    /**
+     * MotoGP.
+     */
+    MOTOGP,
+    /**
+     * Volleyball.
+     */
+    VOLLEY
 }
