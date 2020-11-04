@@ -50,7 +50,7 @@ public class SportSocialNetworkUserImpl<U extends User> extends SocialNetworkUse
     public static final Sport BIKE;
 
     /*
-     * Initialize properly these sports
+     * TODO: initialize properly these sports
      */
     static {
         SOCCER = null;
