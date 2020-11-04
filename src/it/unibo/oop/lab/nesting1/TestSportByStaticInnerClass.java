@@ -36,13 +36,12 @@ public final class TestSportByStaticInnerClass {
         final SportSocialNetworkUserImpl<User> falonso = new SportSocialNetworkUserImpl<>(
                 "Fernando", "Alonso", "falonso", 34);
         /*
-         * alonso is a fan of soccer and bike and practices F1: add these sports
-         * to Alonso
-         * 
-         * falonso.addSport(SportSocialNetworkUserImpl.F1);
-         * 
-         * ...
+         * alonso is a fan of soccer and bike and practices F1:
+         * add these sports to Alonso
          */
+        falonso.addSport(SportSocialNetworkUserImpl.SOCCER);
+        falonso.addSport(SportSocialNetworkUserImpl.BIKE);
+        falonso.addSport(SportSocialNetworkUserImpl.F1);
         System.out.println("Alonso practices F1: "
                 + falonso.hasSport(SportSocialNetworkUserImpl.F1));
         System.out.println("Alonso does not lime volley: "
