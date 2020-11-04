@@ -42,10 +42,8 @@ public final class TestSportAdvancedEnumeration {
         // TEST getIndividualSports()
         /*
          * Set<Sport> individual = falonso.getIndividualSports();
-         * System.out.println("[Alonso] [Individual] [F1]: " +
-         * individual.contains(Sport.F1));
-         * System.out.println("[Alonso] [Individual] [not TENNIS]: " +
-         * !individual. contains(Sport.TENNIS));
+         * System.out.println("[Alonso] [Individual] [F1]: " + individual.contains(Sport.F1));
+         * System.out.println("[Alonso] [Individual] [not TENNIS]: " + !individual. contains(Sport.TENNIS));
          */
         // Cassani practiced bike and loves F1 and MotoGP:
         /*

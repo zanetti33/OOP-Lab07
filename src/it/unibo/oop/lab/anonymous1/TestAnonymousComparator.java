@@ -100,7 +100,7 @@ public final class TestAnonymousComparator {
         /*
          * Order rossi's followed users by age in decreasing order:
          * 
-         * - define an anonymous comparator to sort by decrementing age
+         * - define an anonymous comparator to sort by age decreasingly
          * 
          * NOTE: in order to sort a list think about a method of the utility
          * class Collections

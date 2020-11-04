@@ -20,7 +20,6 @@ import it.unibo.oop.lab.socialnetwork.User;
  * Sport.java)
  * 
  * 
- *
  * @param <U>
  *            specific user type
  */

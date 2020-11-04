@@ -12,8 +12,7 @@ package it.unibo.oop.lab.enum1;
  */
 public final class TestSportByEnumeration {
 
-    private TestSportByEnumeration() {
-    }
+    private TestSportByEnumeration() { }
 
     /**
      * @param args
@@ -27,5 +26,4 @@ public final class TestSportByEnumeration {
          */
         // TODO
     }
-
 }
