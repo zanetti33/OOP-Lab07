@@ -13,7 +13,7 @@ import it.unibo.oop.lab.socialnetwork.User;
 /**
  * 
  * Represents a social network user along with the sports he/she likes to do or
- * to follow
+ * to follow.
  * 
  * The sport has to be defined as a nested static class, featuring just a field
  * representing the sport name.
@@ -112,7 +112,7 @@ public class SportSocialNetworkUserImpl<U extends User> extends SocialNetworkUse
      * Implements a static inner class defining a Sport along with its bare
      * name.
      */
-    public static class Sport {
+    public static final class Sport {
         private final String name;
         private int hash;
 
@@ -146,14 +146,15 @@ public class SportSocialNetworkUserImpl<U extends User> extends SocialNetworkUse
          * Also hashCode must be re-implemented, or this class would violate the
          * equals/hashCode contract.
          */
+
         /**
          * {@inheritDoc}
          */
         public int hashCode() {
             /*
-             * All fields are final. Moreover, there is equality with String. As
-             * such, hashCode() must mimic String hashCode, and lazy init is
-             * doable.
+             * All fields are final. Moreover, there is equality with String. 
+             * As such, hashCode() must mimic String's hashCode, 
+             * and lazy init is doable.
              */
             if (hash == 0) {
                 hash = name.hashCode();
