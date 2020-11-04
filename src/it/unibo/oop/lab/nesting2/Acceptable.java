@@ -10,7 +10,7 @@ public interface Acceptable<T> {
 
     /**
      * Return the acceptor, i.e. the object which will take a sequence of
-     * element in the very same order as defined on acceptable.
+     * elements in the very same order as defined on acceptable.
      * 
      * @return the acceptor
      */

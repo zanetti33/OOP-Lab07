@@ -52,5 +52,4 @@ public final class TestSportAdvancedEnumeration {
         sportsInPlace = dcassani.getSportPracticedInPlace(Place.OUTDOOR);
         System.out.println("[Cassani] [Outdoor] [no. sports==3]: " + (sportsInPlace.size() == 3));
     }
-
 }

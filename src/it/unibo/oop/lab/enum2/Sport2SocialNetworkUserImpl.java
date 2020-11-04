@@ -41,8 +41,7 @@ public class Sport2SocialNetworkUserImpl<U extends User> extends SocialNetworkUs
      *            alias of the user, i.e. the way a user is identified on an
      *            application
      */
-    public Sport2SocialNetworkUserImpl(final String name, final String surname,
-            final String user) {
+    public Sport2SocialNetworkUserImpl(final String name, final String surname, final String user) {
         this(name, surname, user, -1);
     }
 

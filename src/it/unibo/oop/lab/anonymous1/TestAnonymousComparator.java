@@ -102,7 +102,7 @@ public final class TestAnonymousComparator {
         /*
          * Order rossi's followed users by age in decreasing order:
          * 
-         * - define an anonymous comparator to sort by age decrementally
+         * - define an anonymous comparator to sort by age decreasingly
          */
         Collections.sort(rossiUsers, ascending.reversed());
         /*

@@ -11,9 +11,7 @@ public interface Acceptor<T> {
 
     /**
      * Accept a new element. In case the element is not part of the set
-     * sequence, returns a
-     * {@link it.unibo.oop.lab.nesting2.Acceptor.ElementNotAcceptedException}
-     * .
+     * sequence, throws a {@link Acceptor.ElementNotAcceptedException}.
      * 
      * @param newElement
      *            the next element to be accepted
@@ -24,8 +22,7 @@ public interface Acceptor<T> {
 
     /**
      * Terminate to input new elements. If more elements have still to be
-     * inserted, throws an
-     * {@link it.unibo.oop.lab.nesting2.Acceptor.EndNotAcceptedException}.
+     * inserted, throws an {@link Acceptor.EndNotAcceptedException}.
      * 
      * @throws EndNotAcceptedException
      *             if more elements still need to be accepted
@@ -36,10 +33,10 @@ public interface Acceptor<T> {
      * Note: this class is public and static by default, so the modifiers are
      * not redundantly written here.
      */
+
     /**
      * Represents an exception occurring when trying to make the acceptor accept
      * a wrong (out-of-sequence) element.
-     *
      */
     class ElementNotAcceptedException extends Exception {
 
