@@ -3,7 +3,7 @@ package it.unibo.oop.lab.nesting2;
 /**
  * 
  * Represent a class of object accepting a given sequence of elements.
- * 
+ *
  * @param <T>
  */
 public interface Acceptable<T> {

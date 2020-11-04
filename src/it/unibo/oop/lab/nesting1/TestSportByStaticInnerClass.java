@@ -32,7 +32,7 @@ public final class TestSportByStaticInnerClass {
         final SportSocialNetworkUserImpl<User> dcassani = null;
         final SportSocialNetworkUserImpl<User> becclestone = null;
         final SportSocialNetworkUserImpl<User> falonso = null;
-        // TODO
+
         /*
          * alonso is a fan of soccer and bike and practices F1: add these sports
          * to Alonso
@@ -62,5 +62,4 @@ public final class TestSportByStaticInnerClass {
         System.out.println("Bernie does love playing also basket: "
                 + becclestone.hasSport(SportSocialNetworkUserImpl.BASKET));
     }
-
 }
