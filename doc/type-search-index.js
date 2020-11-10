@@ -1,1 +1,1 @@
-typeSearchIndex = [{"l":"All Classes","url":"allclasses-index.html"},{"p":"it.unibo.oop.lab.anonymous1","l":"TestAnonymousComparator"}]
+typeSearchIndex = [{"l":"All Classes","url":"allclasses-index.html"},{"p":"it.unibo.oop.lab.nesting1","l":"SportSocialNetworkUserImpl.Sport"},{"p":"it.unibo.oop.lab.nesting1","l":"SportSocialNetworkUserImpl"},{"p":"it.unibo.oop.lab.enum1","l":"TestSportByEnumeration"},{"p":"it.unibo.oop.lab.nesting1","l":"TestSportByStaticInnerClass"}]
