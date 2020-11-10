@@ -112,7 +112,7 @@ public final class TestAnonymousComparator {
          * NOTE: in order to sort a list think about a method of the utility
          * class Collections
          */
-        denzelUsers.sort(new Comparator<User>() {
+        rossiUsers.sort(new Comparator<User>() {
         	public int compare(final User u1, final User u2) {
         		return u2.getAge() - u1.getAge();
         	}
