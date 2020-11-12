@@ -163,7 +163,7 @@ public class SportSocialNetworkUserImpl<U extends User> extends SocialNetworkUse
 			if (getClass() != obj.getClass())
 				return false;
 			Sport other = (Sport) obj;
-			if (value != other.value)
+			if (this.value != other.value)
 				return false;
 			return true;
 		}
