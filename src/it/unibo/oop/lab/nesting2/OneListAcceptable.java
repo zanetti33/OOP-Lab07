@@ -19,27 +19,26 @@ public class OneListAcceptable<T> implements Acceptable<T> {
 			public void accept(T newElement) throws Acceptor.ElementNotAcceptedException {
 				try {
 					if(newElement.equals(this.iterator.next())) {
-	                    return;
+	                    			return;
 					}
-                }catch(Exception e) {
-                    System.out.println("this element doesn't belong in the list");
-                    throw new Acceptor.ElementNotAcceptedException(newElement);
-                }
+                		}catch(Exception e) {
+                    		System.out.println("this element doesn't belong in the list");
+                    		throw new Acceptor.ElementNotAcceptedException(newElement);
+                		}
 			}
 
 			public void end() throws Acceptor.EndNotAcceptedException {
 				try{
 					if (!this.iterator.hasNext()) {
-                        return;
+                        			return;
 					}
-                }catch(Exception e) {
-                    System.out.println("the list is not finished");
-                }
+                		}catch(Exception e) {
+                    		System.out.println("the list is not finished");
+                		}
 				throw new Acceptor.EndNotAcceptedException();
 			}
 			
 		};
 	}
-	
 	
 }
